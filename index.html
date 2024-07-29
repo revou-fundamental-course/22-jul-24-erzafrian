@@ -8,11 +8,57 @@
   </head>
   <body>
     <!--Navbar-->
-    <nav></nav>
+    <nav>
+      <header>
+        <img class="logo" src="assets\EAF logo.png" />
+      </header>
+      <section class="nav-container">
+        <a class="nav-items" href="#">Home</a>
+        <a class="nav-items" href="#">Our Package</a>
+        <a class="nav-items" href="#">Call Us</a>
+      </section>
+    </nav>
     <!--Header-->
-    <header></header>
+    <article class="main-title">
+      <header>
+        <h1>Your Trusted IT Consultant</h1>
+      </header>
+      <p>Leave the matter to us</p>
+    </article>
     <!--Content-->
-    <main></main>
+    <main>
+      <section class="main-content">
+        <article class="main-content-item">
+          <div class="main-content-banner"></div>
+          <div class="main-item">
+            <div class="item-icon"></div>
+            <div>
+              <h4 id="customer">Wancoy</h4>
+              <p id="text">GRND Owner</p>
+            </div>
+          </div>
+        </article>
+        <form class="main-content-item-form">
+          <header>
+            <h2 class="contact-us">Contact Us</h2>
+            <p>Customer service will contact you within 1x24 hours after we receive the data.</p>
+          </header>
+          <label for="name">Your Name :</label>
+          <input type="text" id="name" name="name" placeholder="First and last name" />
+          <br />
+          <label for="email">Email Address :</label>
+          <input type="text" id="email" name="email" placeholder="xxxxxxxx@email.com" />
+          <br />
+          <label for="gender">What do you need?</label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <br />
+          <input id="send" type="submit" value="SEND" />
+        </form>
+      </section>
+    </main>
     <!--Footer-->
     <footer></footer>
   </body>
