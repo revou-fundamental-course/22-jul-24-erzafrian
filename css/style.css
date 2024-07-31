@@ -35,10 +35,77 @@ nav {
   text-decoration: none;
 }
 
+.nav-items:hover,
+.nav-items.active {
+  color: #c9dabf;
+}
+
 .main-title {
-  padding-top: 6rem;
-  text-align: center;
-  font-family: arial;
+  display: flex;
+  background-color: #9ca986;
+  text-align: start;
+  height: 37rem;
+  align-items: center;
+}
+
+#title-desc {
+  margin: 0rem 155rem 0rem 0rem;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+#tech {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150px;
+  margin-left: 20rem;
+  margin-top: 2rem;
+  height: 7rem;
+  margin-bottom: 0;
+  direction: rtl;
+}
+
+#savvy {
+  font-family: sans-serif;
+  font-size: 160px;
+  margin-left: 20rem;
+  height: 8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  direction: rtl;
+}
+
+#solution {
+  font-family: sans-serif;
+  font-size: 160px;
+  font-style: italic;
+  height: 8rem;
+  margin-left: 24rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.more {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  background-color: #9ca986;
+  margin-bottom: 4rem;
+}
+
+#button-more {
+  border-radius: 5px;
+  border: none;
+  margin: 2rem;
+  background-color: #808d7c;
+  color: whitesmoke;
+  cursor: pointer;
+  height: 50px;
+  width: 20rem;
+  font-size: large;
+}
+
+#button-more:hover {
+  background-color: #5f6f65;
 }
 
 .main-content {
@@ -57,17 +124,46 @@ nav {
   align-items: center;
 }
 
+.slide-container {
+  width: 50%;
+  height: 150px;
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-content-banner {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 7px;
-  width: 40%;
-  height: 100%;
-  background-image: url(https://picsum.photos/350/320?random=2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  width: 440px;
+  height: 290px;
+  background-size: 100%;
+}
+
+.banner-1 {
+  background-image: url(../assets/1.jpg);
+}
+
+.banner-2 {
+  background-image: url(../assets/2.jpg);
+}
+
+.banner-3 {
+  background-image: url(../assets/3.jpg);
+}
+
+.banner-4 {
+  background-image: url(../assets/4.jpg);
+}
+
+.banner-5 {
+  background-image: url(../assets/5.jpg);
 }
 
 #review {
   margin-top: 2rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.1rem;
   font-style: italic;
 }
 
@@ -83,6 +179,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
 }
 
 .main-content-item-form {

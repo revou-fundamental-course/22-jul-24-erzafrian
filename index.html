@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
+    <title>TechSavvy Solutions</title>
     <link rel="stylesheet" href="css\style.css" />
   </head>
   <body>
@@ -21,15 +21,29 @@
     <!--Header-->
     <article class="main-title">
       <header>
-        <h1>Your Trusted IT Consultant</h1>
+        <h1 id="tech">Tech</h1>
+        <h1 id="savvy">Savvy</h1>
+        <h1 id="solution">Solutions</h1>
       </header>
-      <p>Leave the matter to us</p>
+        <p id="title-desc">Elevate Your IT Infrastructure with Our Consulting Expertise.</p>        
     </article>
+    <div class="more">
+      <button id="button-more">More</button>
+    </div>
     <!--Content-->
     <main>
-      <section class="main-content">
+      <section class="main-content" id="home">
         <article class="main-content-item">
-          <div class="main-content-banner"></div>
+          <header>
+            <h2>Our Project</h2>
+          </header>
+          <div class="slide-container">
+            <div class="main-content-banner banner-1"></div>
+            <div class="main-content-banner banner-2"></div>
+            <div class="main-content-banner banner-3"></div>
+            <div class="main-content-banner banner-4"></div>
+            <div class="main-content-banner banner-5"></div>
+          </div>
           <p id="review">"Exceptional Service and Expertise!"</p>
           <div class="main-item">
             <div class="item-icon"></div>
@@ -39,19 +53,20 @@
             </div>
           </div>
         </article>
-        <form class="main-content-item-form">
+        <form class="main-content-item-form" id="contact-form">
           <header>
             <h2 class="contact-us">Contact Us</h2>
             <p>Customer service will contact you within 1x24 hours after we receive the data.</p>
           </header>
           <label for="name">Your Name :</label>
-          <input type="text" id="name" name="name" placeholder="First and last name" />
+          <input type="text" id="name" name="name" placeholder="First and last name" required>
           <br />
           <label for="email">Email Address :</label>
-          <input type="text" id="email" name="email" placeholder="xxxxxxxx@email.com" />
+          <input type="email" id="email" name="email" placeholder="xxxxxxxx@email.com" required>
           <br />
           <label for="gender">What do you need?</label>
-          <select id="gender" name="gender">
+          <select id="gender" name="gender" required>
+            <option value="">Select an option</option>
             <option value="software">Software Development</option>
             <option value="analyst">Data Analyst</option>
             <option value="network">Network Architect</option>
@@ -60,7 +75,7 @@
             <option value="devops">DevOps Specialist</option>
           </select>
           <br />
-          <input id="send" type="submit" value="SEND" />
+          <button id="send" type="submit">SEND</button>
         </form>
       </section>
       <article class="content-offer">
@@ -78,7 +93,7 @@
           <p><b>Affordable Service</b><br />We offer high-quality services at competitive prices.</p>
         </div>
       </article>
-      <section class="main-content-two">
+      <section class="main-content-two" id="our-package">
         <header class="header-package">
           <h1>Our Package</h1>
         </header>
@@ -106,7 +121,7 @@
           </div>
         </div>
       </section>
-      <section class="main-content-two">
+      <section class="main-content-two" id="our-package">
         <div class="content-package">
           <div class="package-one">
             <div class="package-icon"></div>
@@ -132,7 +147,7 @@
         </div>
       </section>
       <hr />
-      <section class="main-content-three">
+      <section class="main-content-three" id="call-us">
         <div>
           <article>
             <h2>Why Choosing Our IT Consulting Services is the Best Decision for Your Business</h2>
@@ -151,5 +166,6 @@
       <h4>EAF</h4>
       <p>© 2024</p>
     </footer>
+    <script src="js\script.js"></script>
   </body>
 </html>
