@@ -123,6 +123,7 @@ nav {
 
 #name,
 #email {
+  border-radius: 5px;
   margin-top: 7px;
   height: 30px;
   border: none;
@@ -130,6 +131,7 @@ nav {
 
 #gender,
 #send {
+  border-radius: 5px;
   margin-top: 7px;
   height: 35px;
   cursor: pointer;
@@ -223,6 +225,7 @@ nav {
 }
 
 #button-contact {
+  border-radius: 5px;
   border: none;
   margin: 2rem;
   background-color: #808d7c;
