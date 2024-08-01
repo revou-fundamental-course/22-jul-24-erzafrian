@@ -56,4 +56,4 @@ function showSlide(n) {
   listImage[indexSlide - 1].style.display = 'block';
 }
 
-setInterval(() => nextSlide(1), 1000);
+setInterval(() => nextSlide(1), 1800);
